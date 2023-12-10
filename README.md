@@ -1,5 +1,7 @@
 # Geo-Gallery
 
+### 🌐 [Demo](geo-gallery.netlify.app) 
+
 ## Description
 
 Geo-Gallery is a responsive web application that elegantly displays a gallery of images along with their geographic locations on a map. Built with performance and accessibility in mind, it adheres to W3C and WCAG standards for valid and accessible code. The application accommodates various devices, offering a responsive design that transitions smoothly from desktop to mobile views.
