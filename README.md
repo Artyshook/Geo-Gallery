@@ -1,6 +1,6 @@
 # Geo-Gallery
 
-### 🌐 [Demo](geo-gallery.netlify.app) 
+### 🌐 [Demo](https://geo-gallery.netlify.app/)
 
 ## Description
 
