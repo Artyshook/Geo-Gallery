@@ -1,0 +1,38 @@
+.image-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0.5rem;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    padding-top: 66.66%;
+    cursor: pointer;
+}
+
+.image-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.azimuth {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the azimuth label */
+    color: #fff; /* Assuming a white font color */
+    background-color: rgba(0,0,0,0.7); /* Semi-transparent background for the label */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9em; /* Smaller font size */
+}
