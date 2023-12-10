@@ -29,7 +29,7 @@ To set up the project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone [Your-Repository-Link]
+git clone https://github.com/Artyshook/Geo-Gallery.git
 
 # Navigate to the project directory
 cd geo-gallery
