@@ -1,6 +1,6 @@
 import './ImageGallery.css';
 import { useState } from 'react';
-import { MapComponent } from "../Map/MapComponent"; // Component to render the map
+import { MapComponent } from "./Map/MapComponent"; // Component to render the map
 import { InView } from "react-intersection-observer"; // Component to detect when an element is in the viewport
 import { ImageData } from "./types";
 import { useImageData } from "./utils/useImageData"; // Hook to fetch image data
