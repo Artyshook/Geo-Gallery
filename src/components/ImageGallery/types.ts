@@ -6,3 +6,8 @@ export interface ImageData {
         azimuth?: number;
     } | null
 }
+
+export interface IPosition {
+    latitude: number;
+    longitude: number;
+}

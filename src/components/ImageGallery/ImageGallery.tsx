@@ -2,7 +2,7 @@ import './ImageGallery.css';
 import { useState } from 'react';
 import { MapComponent } from "./Map/MapComponent"; // Component to render the map
 import { InView } from "react-intersection-observer"; // Component to detect when an element is in the viewport
-import { ImageData } from "./types";
+import {ImageData, IPosition} from "./types";
 import { useImageData } from "./utils/useImageData"; // Hook to fetch image data
 import { ImageItem } from "./ImageItem/ImageItem"; // Component to render each image
 import { ImageModal } from "./Modals/ImageModal"; // Modal component for image details
@@ -32,6 +32,15 @@ export const ImageGallery = () => {
         setCurrentImageIndex(prevIndex => prevIndex === 0 ? visibleImages.length - 1 : (prevIndex - 1) % visibleImages.length);
     };
 
+    // const handleImageVisible = (image: ImageData) => {
+    //     if (image.metadata?.latitude && image.metadata?.longitude) {
+    //         setMapCenter({
+    //             latitude: image.metadata.latitude,
+    //             longitude: image.metadata.longitude,
+    //         });
+    //     }
+    // };
+
     return (
         <div className="container">
             <div className="gallery">
@@ -46,7 +55,10 @@ export const ImageGallery = () => {
                                     setVisibleImages(prev => !prev.some(vImage => vImage.src === image.src) ? [...prev, image] : prev);
                                 }
                             }}>
-                                <ImageItem image={image} onClick={() => openModal(index)} />
+                                <ImageItem
+                                    image={image}
+                                    onClick={() => openModal(index)}
+                                />
                             </InView>
                         </div>
                     ))}
@@ -60,6 +72,7 @@ export const ImageGallery = () => {
                             latitude: metadata?.latitude || 0,
                             longitude: metadata?.longitude || 0
                         }))}
+                        visibleImages={visibleImages}
                     />
                 )}
             </div>
