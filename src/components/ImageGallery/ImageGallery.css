@@ -25,6 +25,10 @@
     margin-right: 10px;
 }
 
+.selected-marker {
+    border-color: red;
+}
+
 /* Media query for large screens */
 @media (min-width: 1024px) {
     .image-gallery-row {
