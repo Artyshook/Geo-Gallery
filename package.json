@@ -19,14 +19,11 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-    "react-image-lightbox": "^5.1.4",
     "react-intersection-observer": "^9.5.3",
-    "react-lazyload": "^3.2.0",
     "react-leaflet": "^4.2.1",
     "react-modal-image": "^2.6.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.37",
