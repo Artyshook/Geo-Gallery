@@ -7,11 +7,18 @@
     position: relative;
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     width: 100%;
     padding-top: 66.66%;
     cursor: pointer;
+}
+
+.image-item.selected {
+    box-shadow: 0 0 5px 4px #6cbeec;
+}
+
+.image-item.selected:hover {
+    border-color: #007bff;
 }
 
 .image-item img {
